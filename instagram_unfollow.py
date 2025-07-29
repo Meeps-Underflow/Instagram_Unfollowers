@@ -8,8 +8,8 @@ def get_usernames_from_html(html_file):
     usernames =  [username.text for username in soup.select('div a')]
     return usernames
 
-followers_file = '/Users/burke/Documents/Projects/Instagram Unfollow/Data/followers_1.html' # replace with your filename
-followings_file = '/Users/burke/Documents/Projects/Instagram Unfollow/Data/following.html' # same as followers
+followers_file = '/Users/Meeps-Underflow/Documents/Projects/Instagram Unfollow/Data/followers_1.html' # replace with your filename
+followings_file = '/Users/Meeps-Underflow/Documents/Projects/Instagram Unfollow/Data/following.html' # same as followers
 
 
 followers = get_usernames_from_html(followers_file)
